@@ -1,16 +1,91 @@
-# React + Vite
+# Hadash School Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive school management system built with React and Vite, designed to streamline administrative tasks and improve educational workflow management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Student Management**: Add, edit, and manage student records with comprehensive information tracking
+- **Timetable Scheduling**: Create and manage class schedules with an intuitive interface
+- **Results Tracking**: Record and monitor student academic performance
+- **Admin Dashboard**: Overview of school statistics and quick access to all modules
+- **Responsive Design**: Mobile-friendly interface using Tailwind CSS
+- **Modern UI**: Clean, professional interface with smooth transitions and interactions
 
-## React Compiler
+## Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 18 with Vite for fast development
+- **Styling**: Tailwind CSS for utility-first styling
+- **UI Components**: Radix UI primitives for accessible components
+- **Icons**: Lucide React for modern iconography
+- **State Management**: React Query for server state management
+- **Routing**: React Router DOM for navigation
+- **Charts**: Recharts for data visualization
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (version 18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd hadash-school
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── layout/         # Layout components
+│   ├── students/       # Student-related components
+│   ├── results/        # Results management components
+│   └── ui/             # Base UI components
+├── pages/              # Page components
+├── services/           # API service functions
+├── lib/                # Utility libraries
+└── utils/              # Helper functions
+```
+
+## Usage
+
+This system is designed for educational institutions to manage their daily operations efficiently. The admin interface provides tools for:
+
+- Managing student enrollment and records
+- Creating and maintaining class timetables
+- Tracking and reporting student results
+- Monitoring overall school performance through dashboards
+
+## Contributing
+
+This project is open for educational purposes. Feel free to submit issues and enhancement requests.
+
+## License
+
+This project is open source and available under the MIT License.
+
+---
+
+**Note**: This is a demonstration project intended for educational purposes. For production use, additional security measures and backend integration would be required.
